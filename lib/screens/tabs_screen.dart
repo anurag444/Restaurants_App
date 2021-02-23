@@ -1,3 +1,4 @@
+import 'package:Restaurants_App/widgets/main_drawe.dart';
 import 'package:flutter/material.dart';
 
 import './favorites_screen.dart';
@@ -33,6 +34,7 @@ class _TabsScreenState extends State<TabsScreen> {
       appBar: AppBar(
         title: Text(_pages[_selectedPageIndex]['title']),
       ),
+      drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
