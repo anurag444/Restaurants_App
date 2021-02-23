@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:Restaurants_App/screens/categories_screen.dart';
 import 'package:Restaurants_App/screens/category_meals_screen.dart';
 import 'package:Restaurants_App/screens/meal_detail_screen.dart';
+import 'package:Restaurants_App/screens/tabs_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.bold)),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CategoriesScreen(),
+      home: TabsScreen(),
       routes: {
         CategoryMeals.routeName: (ctx) => CategoryMeals(),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
